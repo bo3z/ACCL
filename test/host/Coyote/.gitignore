@@ -8,4 +8,6 @@ doxygen.log
 bin
 docs
 lib
-_deps/*
+accl_log
+accl_on_coyote
+.Xil

@@ -21,3 +21,5 @@
 driver/xrt/src/m2m
 driver/xrt/build
 .vscode
+link_tcp_eth_0_debug_none_*
+link_config.ini

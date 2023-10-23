@@ -8,4 +8,8 @@ doxygen.log
 bin
 docs
 lib
-_deps/*
+data
+accl_log
+.Xil
+eigen
+scripts/accl_results.json
