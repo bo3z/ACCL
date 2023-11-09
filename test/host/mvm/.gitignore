@@ -9,7 +9,8 @@ bin
 docs
 lib
 data
-accl_log
+log
 .Xil
 eigen
-scripts/accl_results.json
+source/results*.json
+source/accl-openmpi-comarison*
