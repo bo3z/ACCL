@@ -15,9 +15,9 @@
 #
 # *******************************************************************************/
 
-PLATFORM ?= xilinx_u280_xdma_201920_3
+PLATFORM ?= xilinx_u55c_gen3x16_xdma_3_202210_1
 HW_DEBUG ?= none
-STACK_TYPE ?= UDP
+STACK_TYPE ?= RDMA
 MODE ?= xo
 EN_DMA ?= 1
 EN_ARITH ?= 1
@@ -61,8 +61,6 @@ GEN_KERNEL_TCL := tcl/generate_kernel.tcl
 REBUILD_BD_TCL := tcl/rebuild_bd.tcl tcl/control_bd.tcl tcl/rx_bd.tcl tcl/tx_bd.tcl
 
 ifeq ($(MODE), simdll)
-	FPGAPART=xcu280-fsvh2892-2L-e
-	BOARD=u280
 	BUILD_FOLDER = $(STACK_TYPE)_sim
 else
 	BUILD_FOLDER = $(STACK_TYPE)_$(EN_DMA)$(EN_ARITH)$(EN_COMPRESS)$(EN_EXT_KRNL)$(MB_DEBUG_LEVEL)_$(FPGAPART)
